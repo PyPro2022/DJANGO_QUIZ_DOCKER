@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+DREADME.md
+docker_instructions.md
+img.png
