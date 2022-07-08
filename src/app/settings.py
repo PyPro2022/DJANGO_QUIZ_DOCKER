@@ -17,6 +17,11 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from celery.schedules import crontab
+
+from quiz.tasks import simple_task
+from quiz.tasks import send_email_report
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -87,10 +92,21 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": 'django.db.backends.postgresql_psycopg2',
+        "HOST": os.getenv("POSTGRES_HOST"),
+        "PORT": os.getenv("POSTGRES_PORT"),
+        "NAME": os.getenv("POSTGRES_DB"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
     }
 }
 
@@ -157,8 +173,26 @@ DATE_FORMAT = 'd. m. Y'
 #     'localhost',
 # ]
 
-EMAIL_PORT = 1025
+# EMAIL_PORT = 1025
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+SERVER_EMAIL = "noreply@test.com"
+ADMINS = [("admin", "admin@test.com"), ]
+
+CELERY_BROKER_URL = os.getenv("CELERY_BROKER")
+# CELERY_RESULT_BACKEND = getenv("CELERY_BACKEND")
+
+CELERY_BEAT_SCHEDULE = {
+    "simple_task": {
+        "task": "quiz.tasks.simple_task",
+        "schedule": crontab(minute="*/1"),
+    },
+    "send_email_report": {
+        "task": "quiz.tasks.send_email_report",
+        "schedule": crontab(minute="*/2"),
+    },
+}
