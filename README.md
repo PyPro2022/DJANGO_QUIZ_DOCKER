@@ -46,11 +46,17 @@ Student: Кардашев Константин
 ссылки на имеджи: 
 
 https://hub.docker.com/repository/docker/pypro2022/django_quiz
+
 https://hub.docker.com/repository/docker/pypro2022/django_quiz_docker_worker
+
 https://hub.docker.com/repository/docker/pypro2022/django_quiz_docker_scheduler
+
 https://hub.docker.com/repository/docker/pypro2022/postgres
+
 https://hub.docker.com/repository/docker/pypro2022/nginx_service
+
 https://hub.docker.com/repository/docker/pypro2022/rabbitmq
+
 https://hub.docker.com/repository/docker/pypro2022/redis
 
 ###КАРТИНКИ
