@@ -23,4 +23,4 @@ class CustomUser(AbstractUser):
 @receiver(post_save, sender=CustomUser)
 def move_user_to_group(sender, instance, created, **kwargs):
     if created and not instance.is_superuser:
-        instance.groups.add(Group.objects.get(name='Users'))
+        instance.groups.add(Group.objects.get_or_create(name='Users')[0])
