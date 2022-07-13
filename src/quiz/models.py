@@ -112,3 +112,7 @@ class Result(BaseModel):
             return x
         else:
             return 0
+
+    def __str__(self):
+        return f'{self.user}: {self.exam} {self.num_correct_answers} {self.num_incorrect_answers}'
+

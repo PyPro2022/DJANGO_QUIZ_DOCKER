@@ -3,7 +3,7 @@ version: "3.9"
 services:
   web:
     build: .
-    image: nkiseev/web_service:latest
+    image: pypro2022/django_quiz:latest
     container_name: web_service
 #    command: python manage.py runserver 0.0.0.0:8090
     command: gunicorn app.wsgi:application --bind 0.0.0.0:8090
@@ -31,7 +31,7 @@ services:
 
   nginx:
     build: ./nginx
-    image: nkiseev/nginx_service:latest
+    image: pypro2022/nginx_service:latest
     container_name: nginx_service
     volumes:
       - static_volume:/opt/src/static

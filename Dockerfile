@@ -20,3 +20,6 @@ COPY src .
 EXPOSE 8090
 
 # CMD python manage.py runserver 0.0.0.0:8090
+# CMD python manage.py migrate
+# CMD python manage.py loaddata dump_quiz.json
+# CMD python manage.py collectstatic
