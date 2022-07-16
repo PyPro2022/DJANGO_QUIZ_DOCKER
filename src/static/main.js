@@ -1,4 +1,4 @@
-$(document).ready( fn:() => {
+$(document).ready(() => {
    console.log('Status Check!');
 });
 

@@ -18,7 +18,7 @@ RUN rm -f requirements.txt
 COPY src .
 
 EXPOSE 8090
-COPY data.json .
+COPY dump_quiz.json .
 
 
 # CMD python manage.py runserver 0.0.0.0:8090
