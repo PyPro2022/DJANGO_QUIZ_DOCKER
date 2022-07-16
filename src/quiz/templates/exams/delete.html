@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+Quiz - {% block title %}Удаление результатов теста: {{ exam.title }} {{ result.created_datetimestamp }}{% endblock %}
+
+{% block header %}
+    Удалить результаты теста <span style="color: red">{{ exam.title }}</span> от <span style="color: red">{{ result.create_timestamp|date:'d.m.Y, H:i:s' }}</span> ?
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <p>Уверены?
+        </p>
+            <input class="btn btn-outline-danger" type="submit" value="Удалить">
+           <a class="btn btn-outline-primary" href="{% url 'quiz:details' uuid=exam.uuid %}">Не надо!</a>
+
+    </form>
+{% endblock %}

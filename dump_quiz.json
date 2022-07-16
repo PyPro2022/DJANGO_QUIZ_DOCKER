@@ -1,0 +1,1286 @@
+[
+{
+  "model": "quiz.exam",
+  "pk": 2,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:21:40.152Z",
+    "update_timestamp": "2022-06-29T23:23:04.653Z",
+    "uuid": "fc898d6e-c881-4417-a523-ed640262707e",
+    "title": "Тест",
+    "description": "Тест для тестировки тестов",
+    "level": 0
+  }
+},
+{
+  "model": "quiz.exam",
+  "pk": 3,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.531Z",
+    "update_timestamp": "2022-06-30T08:55:37.878Z",
+    "uuid": "399a835e-457e-4f01-a07d-c307fcc38550",
+    "title": "Тест на время",
+    "description": "Время для тестов на время про время.",
+    "level": 0
+  }
+},
+{
+  "model": "quiz.exam",
+  "pk": 4,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.831Z",
+    "update_timestamp": "2022-06-30T08:37:58.945Z",
+    "uuid": "d3801164-bb71-46b7-960f-73fbc0397dde",
+    "title": "Тест: народная мудрость",
+    "description": "Как хорошо ты знаешь пословицы, поговорки, крылатые фразы.",
+    "level": 1
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 6,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:21:40.156Z",
+    "update_timestamp": "2022-06-29T23:16:04.703Z",
+    "exam": 2,
+    "order_num": 1,
+    "text": "Вопрос 1",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 7,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:21:40.158Z",
+    "update_timestamp": "2022-06-29T23:16:52.010Z",
+    "exam": 2,
+    "order_num": 2,
+    "text": "Вопрос 2",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 8,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:21:40.160Z",
+    "update_timestamp": "2022-06-29T23:17:52.111Z",
+    "exam": 2,
+    "order_num": 3,
+    "text": "Вопрос 3",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 9,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.758Z",
+    "update_timestamp": "2022-06-29T23:18:34.620Z",
+    "exam": 2,
+    "order_num": 4,
+    "text": "Вопрос 4",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 10,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.761Z",
+    "update_timestamp": "2022-06-29T23:19:04.833Z",
+    "exam": 2,
+    "order_num": 5,
+    "text": "Вопрос 5",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 11,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.762Z",
+    "update_timestamp": "2022-06-29T23:19:34.204Z",
+    "exam": 2,
+    "order_num": 6,
+    "text": "Вопрос 6",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 12,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.763Z",
+    "update_timestamp": "2022-06-29T23:20:05.566Z",
+    "exam": 2,
+    "order_num": 7,
+    "text": "Вопрос 7",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 13,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.765Z",
+    "update_timestamp": "2022-06-29T23:20:29.550Z",
+    "exam": 2,
+    "order_num": 8,
+    "text": "Вопрос 8",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 14,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.766Z",
+    "update_timestamp": "2022-06-29T23:20:49.779Z",
+    "exam": 2,
+    "order_num": 9,
+    "text": "Вопрос 9",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 15,
+  "fields": {
+    "create_timestamp": "2022-06-29T20:31:18.767Z",
+    "update_timestamp": "2022-06-29T23:21:20.012Z",
+    "exam": 2,
+    "order_num": 10,
+    "text": "Вопрос 10",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 16,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.584Z",
+    "update_timestamp": "2022-06-30T07:28:16.199Z",
+    "exam": 3,
+    "order_num": 1,
+    "text": "Чему равен промежуток времени между 22:59 и 01:47",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 17,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.587Z",
+    "update_timestamp": "2022-06-30T07:29:21.517Z",
+    "exam": 3,
+    "order_num": 2,
+    "text": "Сколько секунд в сутках?",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 18,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.594Z",
+    "update_timestamp": "2022-06-30T07:35:01.284Z",
+    "exam": 3,
+    "order_num": 3,
+    "text": "Сколько дней в году уходит на страдание хернёй, если считать что в среднем человек страдает хернёй по 2,5 часа в день?",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 19,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.596Z",
+    "update_timestamp": "2022-06-30T07:33:38.168Z",
+    "exam": 3,
+    "order_num": 4,
+    "text": "Сколько дней в году в человек тратит на рутину (сон, еда, душ и т.п.), если считать что в среднем в день на рутину уходит 3,5 часа?",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 20,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.598Z",
+    "update_timestamp": "2022-06-30T07:42:55.556Z",
+    "exam": 3,
+    "order_num": 5,
+    "text": "Сколько квадратных секунд в одном квадратном часе?",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 21,
+  "fields": {
+    "create_timestamp": "2022-06-30T07:25:32.599Z",
+    "update_timestamp": "2022-06-30T07:49:01.048Z",
+    "exam": 3,
+    "order_num": 6,
+    "text": "Сколько квадратных часов в сутках?",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 22,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.833Z",
+    "update_timestamp": "2022-06-30T08:53:56.333Z",
+    "exam": 4,
+    "order_num": 1,
+    "text": "Семь раз отмерь, один раз...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 23,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.835Z",
+    "update_timestamp": "2022-06-30T08:52:40.771Z",
+    "exam": 4,
+    "order_num": 2,
+    "text": "Не всё то золото, что...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 24,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.836Z",
+    "update_timestamp": "2022-06-30T08:51:12.771Z",
+    "exam": 4,
+    "order_num": 3,
+    "text": "Ложка дёгтя в бочке...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 25,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.837Z",
+    "update_timestamp": "2022-06-30T08:50:06.854Z",
+    "exam": 4,
+    "order_num": 4,
+    "text": "Моя хата ...., ничего не знаю",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 26,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.839Z",
+    "update_timestamp": "2022-06-30T08:49:13.987Z",
+    "exam": 4,
+    "order_num": 5,
+    "text": "Ворон ворону ...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 27,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.840Z",
+    "update_timestamp": "2022-06-30T08:48:12.257Z",
+    "exam": 4,
+    "order_num": 6,
+    "text": "Если в реке дерётся рыба, зачит минуту назад там проплыл ...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 28,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.842Z",
+    "update_timestamp": "2022-06-30T08:46:09.210Z",
+    "exam": 4,
+    "order_num": 7,
+    "text": "Нет ничего более постоянного, чем...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 29,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.843Z",
+    "update_timestamp": "2022-06-30T08:43:55.342Z",
+    "exam": 4,
+    "order_num": 8,
+    "text": "Друзья познаются...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 30,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.844Z",
+    "update_timestamp": "2022-06-30T08:42:10.989Z",
+    "exam": 4,
+    "order_num": 9,
+    "text": "Кто сеет ветер....",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 31,
+  "fields": {
+    "create_timestamp": "2022-06-30T08:37:22.846Z",
+    "update_timestamp": "2022-06-30T08:39:19.859Z",
+    "exam": 4,
+    "order_num": 10,
+    "text": "Сегодня в завтрашний день смотреть могут...",
+    "image": ""
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 21,
+  "fields": {
+    "question": 6,
+    "text": "Ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 22,
+  "fields": {
+    "question": 6,
+    "text": "Ещё ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 23,
+  "fields": {
+    "question": 6,
+    "text": "Почти правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 24,
+  "fields": {
+    "question": 6,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 25,
+  "fields": {
+    "question": 7,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 26,
+  "fields": {
+    "question": 7,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 27,
+  "fields": {
+    "question": 7,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 28,
+  "fields": {
+    "question": 7,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 29,
+  "fields": {
+    "question": 8,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 30,
+  "fields": {
+    "question": 8,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 31,
+  "fields": {
+    "question": 8,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 32,
+  "fields": {
+    "question": 8,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 33,
+  "fields": {
+    "question": 9,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 34,
+  "fields": {
+    "question": 9,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 35,
+  "fields": {
+    "question": 9,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 36,
+  "fields": {
+    "question": 9,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 37,
+  "fields": {
+    "question": 10,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 38,
+  "fields": {
+    "question": 10,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 39,
+  "fields": {
+    "question": 10,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 40,
+  "fields": {
+    "question": 10,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 41,
+  "fields": {
+    "question": 11,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 42,
+  "fields": {
+    "question": 11,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 43,
+  "fields": {
+    "question": 11,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 44,
+  "fields": {
+    "question": 11,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 45,
+  "fields": {
+    "question": 12,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 46,
+  "fields": {
+    "question": 12,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 47,
+  "fields": {
+    "question": 12,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 48,
+  "fields": {
+    "question": 12,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 49,
+  "fields": {
+    "question": 13,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 50,
+  "fields": {
+    "question": 13,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 51,
+  "fields": {
+    "question": 13,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 52,
+  "fields": {
+    "question": 13,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 53,
+  "fields": {
+    "question": 14,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 54,
+  "fields": {
+    "question": 14,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 55,
+  "fields": {
+    "question": 14,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 56,
+  "fields": {
+    "question": 14,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 57,
+  "fields": {
+    "question": 15,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 58,
+  "fields": {
+    "question": 15,
+    "text": "Правильный ответ",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 59,
+  "fields": {
+    "question": 15,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 60,
+  "fields": {
+    "question": 15,
+    "text": "Не правильный ответ",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 61,
+  "fields": {
+    "question": 16,
+    "text": "02:38",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 62,
+  "fields": {
+    "question": 16,
+    "text": "01:59",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 63,
+  "fields": {
+    "question": 16,
+    "text": "02:48",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 64,
+  "fields": {
+    "question": 16,
+    "text": "03:05",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 65,
+  "fields": {
+    "question": 17,
+    "text": "60000",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 66,
+  "fields": {
+    "question": 17,
+    "text": "76600",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 67,
+  "fields": {
+    "question": 17,
+    "text": "64000",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 68,
+  "fields": {
+    "question": 17,
+    "text": "86400",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 69,
+  "fields": {
+    "question": 19,
+    "text": "35",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 70,
+  "fields": {
+    "question": 19,
+    "text": "53",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 71,
+  "fields": {
+    "question": 19,
+    "text": "66",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 72,
+  "fields": {
+    "question": 19,
+    "text": "48",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 73,
+  "fields": {
+    "question": 18,
+    "text": "38",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 74,
+  "fields": {
+    "question": 18,
+    "text": "42",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 75,
+  "fields": {
+    "question": 18,
+    "text": "25",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 76,
+  "fields": {
+    "question": 18,
+    "text": "40",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 77,
+  "fields": {
+    "question": 20,
+    "text": "12960000",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 78,
+  "fields": {
+    "question": 20,
+    "text": "3600",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 79,
+  "fields": {
+    "question": 20,
+    "text": "600",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 80,
+  "fields": {
+    "question": 20,
+    "text": "144000",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 81,
+  "fields": {
+    "question": 21,
+    "text": "36",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 82,
+  "fields": {
+    "question": 21,
+    "text": "24",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 83,
+  "fields": {
+    "question": 21,
+    "text": "12",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 84,
+  "fields": {
+    "question": 21,
+    "text": "6",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 85,
+  "fields": {
+    "question": 31,
+    "text": "Все",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 86,
+  "fields": {
+    "question": 31,
+    "text": "Не только лишь все",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 87,
+  "fields": {
+    "question": 31,
+    "text": "Мало кто может",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 88,
+  "fields": {
+    "question": 31,
+    "text": "Не могут",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 89,
+  "fields": {
+    "question": 30,
+    "text": "пожнёт бурю",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 90,
+  "fields": {
+    "question": 30,
+    "text": "тот молодец",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 91,
+  "fields": {
+    "question": 30,
+    "text": "тот устал",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 92,
+  "fields": {
+    "question": 30,
+    "text": "у того много свободного времени",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 93,
+  "fields": {
+    "question": 29,
+    "text": "в еде",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 94,
+  "fields": {
+    "question": 29,
+    "text": "в беде",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 95,
+  "fields": {
+    "question": 29,
+    "text": "подругами",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 96,
+  "fields": {
+    "question": 29,
+    "text": "и не признаются",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 97,
+  "fields": {
+    "question": 28,
+    "text": "котики",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 98,
+  "fields": {
+    "question": 28,
+    "text": "скорость света в ваккуме",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 99,
+  "fields": {
+    "question": 28,
+    "text": "\"я ничего не трогала, оно само!\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 100,
+  "fields": {
+    "question": 28,
+    "text": "временное",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 101,
+  "fields": {
+    "question": 27,
+    "text": "труп",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 102,
+  "fields": {
+    "question": 27,
+    "text": "англичанин",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 103,
+  "fields": {
+    "question": 27,
+    "text": "крокодил",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 104,
+  "fields": {
+    "question": 27,
+    "text": "телевизор",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 105,
+  "fields": {
+    "question": 26,
+    "text": "от души душевно в душу",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 106,
+  "fields": {
+    "question": 26,
+    "text": "продал гараж",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 107,
+  "fields": {
+    "question": 26,
+    "text": "глаз не выклюет",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 108,
+  "fields": {
+    "question": 26,
+    "text": "не ворона",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 109,
+  "fields": {
+    "question": 25,
+    "text": "в Майями",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 110,
+  "fields": {
+    "question": 25,
+    "text": "с краю",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 111,
+  "fields": {
+    "question": 25,
+    "text": "не моя",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 112,
+  "fields": {
+    "question": 25,
+    "text": "моя крепость",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 113,
+  "fields": {
+    "question": 24,
+    "text": "нефти",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 114,
+  "fields": {
+    "question": 24,
+    "text": "пива",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 115,
+  "fields": {
+    "question": 24,
+    "text": "и вокруг неё всё загадила",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 116,
+  "fields": {
+    "question": 24,
+    "text": "мёда",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 117,
+  "fields": {
+    "question": 23,
+    "text": "украл",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 118,
+  "fields": {
+    "question": 23,
+    "text": "блестит",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 119,
+  "fields": {
+    "question": 23,
+    "text": "бензин",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 120,
+  "fields": {
+    "question": 23,
+    "text": "как",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 121,
+  "fields": {
+    "question": 22,
+    "text": "отдохни",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 122,
+  "fields": {
+    "question": 22,
+    "text": "не ананас",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 123,
+  "fields": {
+    "question": 22,
+    "text": "отрежь",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz.choice",
+  "pk": 124,
+  "fields": {
+    "question": 22,
+    "text": "в Париж",
+    "is_correct": false
+  }
+}
+]
