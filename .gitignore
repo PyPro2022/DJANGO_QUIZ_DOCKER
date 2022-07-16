@@ -58,7 +58,7 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-src/db.sqlite3
+db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
@@ -131,3 +131,7 @@ dmypy.json
 DREADME.md
 docker_instructions.md
 img_tocken.png
+docker-compose.old
+rocker-compose-aws.new
+rocker-compose.old
+README.md

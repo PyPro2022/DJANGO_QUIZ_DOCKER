@@ -1,4 +1,4 @@
-# .../DJANGO_QUIZ/app/settings.py
+# .../DJANGO_QUIZ_DOCKER/app/settings.py
 
 """
 Django settings for app project.
@@ -101,21 +101,14 @@ WSGI_APPLICATION = 'app.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": 'django.db.backends.postgresql_psycopg2',
-#         "HOST": os.getenv("POSTGRES_HOST"),
-#         "PORT": os.getenv("POSTGRES_PORT"),
-#         "NAME": os.getenv("POSTGRES_DB"),
-#         "USER": os.getenv("POSTGRES_USER"),
-#         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-#     }
-# }
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": 'django.db.backends.postgresql_psycopg2',
+        # "ENGINE": 'django.db.backends.postgresql_psycopg2-binary',
+        "PORT": os.getenv("POSTGRES_PORT"),
+        "NAME": os.getenv("POSTGRES_DB"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
     }
 }
 
@@ -193,7 +186,7 @@ SERVER_EMAIL = "noreply@test.com"
 ADMINS = [("admin", "admin@test.com"), ]
 
 CELERY_BROKER_URL = os.getenv("CELERY_BROKER")
-# CELERY_RESULT_BACKEND = getenv("CELERY_BACKEND")
+CELERY_RESULT_BACKEND = os.getenv("CELERY_BACKEND")
 
 CELERY_BEAT_SCHEDULE = {
     "simple_task": {

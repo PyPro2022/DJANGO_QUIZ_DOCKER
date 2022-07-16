@@ -16,6 +16,9 @@ RUN pip install -r requirements.txt
 RUN rm -f requirements.txt
 
 COPY src .
+COPY dump_quiz.json .
+
+
 
 EXPOSE 8090
 
