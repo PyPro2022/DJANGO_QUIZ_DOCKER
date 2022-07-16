@@ -16,9 +16,10 @@ RUN pip install -r requirements.txt
 RUN rm -f requirements.txt
 
 COPY src .
+COPY dump_quiz.json .
+
 
 EXPOSE 8090
-COPY dump_quiz.json .
 
 
 # CMD python manage.py runserver 0.0.0.0:8090
