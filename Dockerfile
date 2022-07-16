@@ -18,6 +18,8 @@ RUN rm -f requirements.txt
 COPY src .
 
 EXPOSE 8090
+COPY data.json .
+
 
 # CMD python manage.py runserver 0.0.0.0:8090
 # CMD python manage.py migrate
