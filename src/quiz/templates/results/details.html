@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% load custom_tags %}
+
+{% block title %}
+    Результат теста
+{% endblock %}
+
+{% block header %}
+    Результат теста: "{{ result.exam.title }}"
+{% endblock %}
+
+{% block content %}
+<!--служебная информация для нужд отладки-->
+<!--{{view.template_name}}<br>-->
+<!--{{view}}<br>-->
+<!--{{view.get_context_data | pprint}}<br>-->
+<!--/служебная информация для нужд отладки-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Начат</td>
+                            <td>{{ result.create_timestamp|date:'d.m.Y, H:i:s' }}</td>
+                        </tr>
+                        <tr>
+                            <td>Окончен</td>
+                            <td>{{ result.update_timestamp|date:'d.m.Y, H:i:s' }}</td>
+                        </tr>
+                        <tr>
+                            <td>Время</td>
+<!--  Вариант через джанго-фильры. Недостаток: точность только до минут                          -->
+<!--                            <td>{{ result.create_timestamp|timesince:result.update_timestamp }}</td>-->
+<!--  /Вариант через джанго-фильры. Недостаток: точность только до минут                          -->
+                             <td>{{ result.get_timedelta|time:'H:i:s'}}</td>
+                        </tr>
+
+                        <tr>
+                            <td>Пользователь</td>
+                            <td>{{ result.user }}</td>
+                        </tr>
+                        <tr>
+<!--                            <td>Результат</td>-->
+<!--&lt;!&ndash;                            \/ можно заморочиться и пробросить exam.questions_count \| &ndash;&gt;-->
+<!--    <td>{% expression '%1 * 100 // (%1+%2)' result.num_correct_answers result.num_incorrect_answers %} %</td>-->
+
+                        </tr>
+                        <tr>
+                           <td>Результат</td>
+                            <td>
+                            {% expression '%1 * 100 // (%1+%2)' result.num_correct_answers result.num_incorrect_answers as progress_level%}
+                            <div class="progress">
+                                      <div class="progress-bar bg-success"
+                                           role="progressbar"
+                                           style="width: {{ progress_level }}% "
+                                           aria-valuenow="{{ progress_level }}"
+                                           aria-valuemin="0"
+                                           aria-valuemax="100">
+                                          {% expression '%1 * 100 // (%1+%2)' result.num_correct_answers result.num_incorrect_answers%}%
+                                      </div>
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Баллы</td>
+                            <td>{{ result.points }}</td>
+                        </tr>
+                        <tr>
+<!--                            <td>Правильные/Не правильные</td>-->
+<!--                            <td>{{ result.num_correct_answers }} / {{ result.num_incorrect_answers }}</td>-->
+                        </tr>
+                    </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="row">
+            <a class="btn btn-primary m-3" href="{% url 'quiz:details' uuid=result.exam.uuid %}">Вернуться к тесту</a>
+        </div>
+    </div>
+{% endblock %}

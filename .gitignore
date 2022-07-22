@@ -58,8 +58,9 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
+src/db.sqlite3
 db.sqlite3-journal
+db.sqlite3
 
 # Flask stuff:
 instance/
@@ -127,3 +128,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+DREADME.md
+docker_instructions.md
+img_tocken.png
+rocker-compose.old
+rocker-compose-aws.new
